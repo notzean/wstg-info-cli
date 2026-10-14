@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSTG-INFO Report - https://ekinair.my.id/</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #fff;
+            --primary: #2c3e50;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --border: #ddd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            margin: 0;
+            font-size: 1.2em;
+            color: var(--primary);
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .status.completed { background-color: var(--success); }
+        .status.partial { background-color: var(--warning); }
+        .status.error { background-color: var(--danger); }
+        
+        details {
+            margin-bottom: 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        summary {
+            padding: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .details-content {
+            padding: 15px;
+            border-top: 1px solid var(--border);
+            background-color: #fff;
+            overflow-x: auto;
+        }
+        pre {
+            background: #2b2b2b;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff; color: #000; padding: 0; }
+            .container { max-width: 100% !important; margin: 0; padding: 0; }
+            .card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; margin-bottom: 20px; }
+            pre { background: #f4f4f4; color: #000; border: 1px solid #ddd; white-space: pre-wrap; word-break: break-all; }
+            header { background: #fff; color: #000; border: 1px solid #ccc; }
+            .status.completed { color: #000; border: 1px solid var(--success); background: transparent; }
+            .status.error { color: #000; border: 1px solid var(--danger); background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WSTG-INFO Security Report</h1>
+            <p>Target: <strong>https://ekinair.my.id/</strong></p>
+            <p>Generated: 2026-09-24 15:06:12</p>
+            <button class="no-print" onclick="exportPDF()" style="margin-top: 15px; padding: 10px 20px; background-color: var(--success); color: white; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">📄 Export as PDF</button>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-01: Conduct Search Engine Discovery Reconnaissance for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>WHOIS Information</summary>
+                    <div class="details-content">
+                        <pre>{
+  "Domain Name": "EKINAIR.MY.ID",
+  "Registry Domain ID": "25099107_DOMAIN_ID-ID",
+  "Registrar WHOIS Server": "",
+  "Registrar URL": "www.dewabiz.co.id",
+  "Updated Date": "2026-06-30T11:45:06Z",
+  "Creation Date": "2026-06-30T11:44:55Z",
+  "Registry Expiry Date": "2027-06-30T23:59:59Z",
+  "Registrar": "PT Dewabisnis Digital Indonesia",
+  "Registrar IANA ID": "1",
+  "Registrar Abuse Contact Email": "registrar@dewabiz.co.id",
+  "Registrar Abuse Contact Phone": "",
+  "Domain Status": "clientTransferProhibited, serverTransferProhibited",
+  "Name Server": "NS1.DEWABIZ.CO.ID, NS2.DEWABIZ.CO.ID, NS3.DEWABIZ.CO.ID, NS4.DEWABIZ.CO.ID",
+  "DNSSEC": "unsigned",
+  "URL of the ICANN Whois Inaccuracy Complaint Form": "https://www.icann.org/wicf/",
+  ">>> Last update of WHOIS database": "2026-07-17T15:18:11Z <<<"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Search Engine Results</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "query": "inurl:\"ekinair.my.id\"",
+    "title": "\ud835\udc04\ud835\udc0a\ud835\udc08\ud835\udc0d\ud835\udc00\ud835\udc08\ud835\udc11 | #\ud835\udc01\ud835\udc11\ud835\udc00\ud835\udc15\ud835\udc04 (@ekinair_) | TikTok",
+    "url": "https://www.tiktok.com/@ekinair_",
+    "snippet": "Jacqueline Immanuela's Fanbase, supporting her journey at JKT48! #\ud835\udc01\ud835\udc11\ud835\udc00\ud835\udc15\ud835\udc04 ekinair.my.id/linktree Video Disukai Terbaru Populer"
+  },
+  {
+    "query": "inurl:\"ekinair.my.id\"",
+    "title": "Pada 20 Juni 2026, gua dipercaya @Ekinair_ untuk membuat website ...",
+    "url": "https://x.com/ferdy_rhn/status/2075403551233499605",
+    "snippet": "[Website Launch] Sebagai puncak sekaligus penutup dari seluruh rangkaian online project perayaan ulang tahun ke-17 ini, EKINAIR secara resmi meluncurkan website khusus yang kini sudah mengudara! \ud83c\udf10 Kal"
+  },
+  {
+    "query": "inurl:\"ekinair.my.id\"",
+    "title": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase",
+    "url": "https://ekinair.my.id/linktree",
+    "snippet": "Official Fanbase of Jacqueline Immanuela JKT48. Discover her profile, projects, schedules, and gallery."
+  },
+  {
+    "query": "inurl:\"ekinair.my.id\"",
+    "title": "[Website Launch] Sebagai puncak sekaligus penutup dari seluruh ...",
+    "url": "https://x.com/Ekinair_/status/2074856212370432196",
+    "snippet": "[Website Launch] Sebagai puncak sekaligus penutup dari seluruh rangkaian online project perayaan ulang tahun ke-17 ini, EKINAIR secara resmi meluncurkan website khusus yang kini sudah mengudara! \ud83c\udf10 Kal"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-02: Fingerprint Web Server</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTTP Headers</summary>
+                    <div class="details-content">
+                        <pre>{
+  "status_code": 200,
+  "server": "Vercel",
+  "x_powered_by": "Not Disclosed",
+  "x_aspnet_version": "Not Disclosed",
+  "x_generator": "Not Disclosed",
+  "via": "Not Disclosed",
+  "x_cache": "Not Disclosed",
+  "all_headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Age": "1712916",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "Content-Disposition": "inline",
+    "Content-Encoding": "br",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://platform.twitter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' blob: https:; worker-src 'self' blob:; frame-src 'self' https:; object-src 'none'; base-uri 'self'",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Thu, 24 Sep 2026 08:07:43 GMT",
+    "Etag": "W/\"854b24814dae3afe022ff6526b859608\"",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Server": "Vercel",
+    "Strict-Transport-Security": "max-age=63072000",
+    "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "X-Matched-Path": "/",
+    "X-Nextjs-Prerender": "1",
+    "X-Nextjs-Stale-Time": "300",
+    "X-Vercel-Cache": "HIT",
+    "X-Vercel-Id": "sin1::7tc9m-1790237263605-c7302ea4c96c",
+    "Transfer-Encoding": "chunked"
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>HTTP Methods</summary>
+                    <div class="details-content">
+                        <pre>{
+  "options_allow": "Not Disclosed",
+  "head_status": 200,
+  "head_server": "Vercel"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Error Page Analysis</summary>
+                    <div class="details-content">
+                        <pre>{
+  "404_status": 404,
+  "error_page_signatures": [
+    "No signature detected"
+  ]
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Banner Grab</summary>
+                    <div class="details-content">
+                        <pre>{
+  "raw_banner": "HTTP/1.0 308 Permanent Redirect\r\nContent-Type: text/plain\r\nLocation",
+  "banner_server": "Not found in banner"
+}</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-03: Review Webserver Metafiles for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>robots.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": true,
+  "disallow_paths": [
+    "/admin/",
+    "/api/"
+  ],
+  "allow_paths": [
+    "/"
+  ],
+  "sitemaps": [
+    "https://ekinair.my.id/sitemap.xml"
+  ],
+  "raw": "User-Agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\n\nSitemap: https://ekinair.my.id/sitemap.xml\n"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Sitemap</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": true,
+  "urls": [
+    "https://ekinair.my.id",
+    "https://ekinair.my.id/ekin/about",
+    "https://ekinair.my.id/ekinair/about",
+    "https://ekinair.my.id/gallery",
+    "https://ekinair.my.id/linktree"
+  ],
+  "url_count": 5,
+  "sitemap_path": "/sitemap.xml"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>security.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": false,
+  "content": ""
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>humans.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": false,
+  "content": ""
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>.well-known Resources</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-04: Enumerate Applications on Webserver</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>DNS Records</summary>
+                    <div class="details-content">
+                        <pre>{
+  "A": [
+    "216.198.79.1"
+  ],
+  "AAAA": [],
+  "MX": [],
+  "NS": [
+    "ns1.dewabiz.co.id.",
+    "ns4.dewabiz.co.id.",
+    "ns3.dewabiz.co.id.",
+    "ns2.dewabiz.co.id."
+  ],
+  "TXT": [],
+  "CNAME": [],
+  "SOA": [
+    "ns1.dewabiz.co.id. info.dewabiz.com. 2026092401 10800 3605 604800 3600"
+  ]
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Subdomain Enumeration</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Open Ports</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "port": 80,
+    "service": "HTTP",
+    "status": "open"
+  },
+  {
+    "port": 443,
+    "service": "HTTPS",
+    "status": "open"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Virtual Hosts</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "host_header": "ekinair.my.id",
+    "status_code": 403,
+    "content_length": 59,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "www.ekinair.my.id",
+    "status_code": 307,
+    "content_length": 15,
+    "redirect": "https://ekinair.my.id/"
+  },
+  {
+    "host_header": "admin.ekinair.my.id",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "api.ekinair.my.id",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "dev.ekinair.my.id",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-05: Review Webpage Content for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML Comments</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Meta Tags</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "name": "viewport",
+    "content": "width=device-width, initial-scale=1"
+  },
+  {
+    "name": "description",
+    "content": "Official Fanbase of Jacqueline Immanuela JKT48. Discover her profile, projects, schedules, and gallery."
+  },
+  {
+    "name": "author",
+    "content": "EKINAIR Official"
+  },
+  {
+    "name": "keywords",
+    "content": "JKT48,Jacqueline Immanuela,Jacqueline JKT48,Ekinair,Ekin,Trainee JKT48,Idol,Fanbase,Jadwal JKT48,Member JKT48"
+  },
+  {
+    "name": "og:title",
+    "content": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase"
+  },
+  {
+    "name": "og:description",
+    "content": "Official Fanbase of Jacqueline Immanuela JKT48. Discover her profile, projects, schedules, and gallery."
+  },
+  {
+    "name": "og:url",
+    "content": "https://ekinair.my.id"
+  },
+  {
+    "name": "og:image",
+    "content": "https://ekinair.my.id/logo-og.png"
+  },
+  {
+    "name": "og:image:width",
+    "content": "1200"
+  },
+  {
+    "name": "og:image:height",
+    "content": "630"
+  },
+  {
+    "name": "og:image:alt",
+    "content": "EKINAIR Logo"
+  },
+  {
+    "name": "og:type",
+    "content": "website"
+  },
+  {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+  },
+  {
+    "name": "twitter:title",
+    "content": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase"
+  },
+  {
+    "name": "twitter:description",
+    "content": "Official Fanbase of Jacqueline Immanuela JKT48. Discover her profile, projects, schedules, and gallery."
+  },
+  {
+    "name": "twitter:image",
+    "content": "https://ekinair.my.id/logo-og.png"
+  },
+  {
+    "name": "title",
+    "content": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Sensitive Patterns</summary>
+                    <div class="details-content">
+                        <pre>{}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>JavaScript Analysis</summary>
+                    <div class="details-content">
+                        <pre>{
+  "inline_script_count": 9,
+  "external_js_urls": [
+    "https://ekinair.my.id/_next/static/chunks/27ec2tp5juxgq.js",
+    "https://ekinair.my.id/_next/static/chunks/3b8pvy7tnp1cg.js",
+    "https://ekinair.my.id/_next/static/chunks/3_qa25k-pa7xu.js",
+    "https://ekinair.my.id/_next/static/chunks/0gp5ktsgx8lyg.js",
+    "https://ekinair.my.id/_next/static/chunks/turbopack-2imtddf7dfqcm.js",
+    "https://ekinair.my.id/_next/static/chunks/1hn99wetp7b5q.js",
+    "https://ekinair.my.id/_next/static/chunks/14mrh2-p_w84d.js",
+    "https://ekinair.my.id/_next/static/chunks/0e6tqg0v4qth5.js",
+    "https://ekinair.my.id/_next/static/chunks/2yp99-cgku0g-.js",
+    "https://ekinair.my.id/_next/static/chunks/3fmyap972tr8-.js"
+  ],
+  "js_sensitive_findings": [
+    {
+      "type": "external_script",
+      "url": "https://ekinair.my.id/_next/static/chunks/27ec2tp5juxgq.js",
+      "sensitive_data": {
+        "internal_paths": [
+          "/ROOT/node_modules/next/dist/compiled/process/"
+        ],
+        "debug_info": [
+          "Debug",
+          "Exception"
+        ],
+        "version_numbers": [
+          "19.3.0"
+        ],
+        "todo_fixme": [
+          "in Next.js.`,t),this.name=\"InvariantError\"}}},76963,(e,t,r)=>{\"use strict\";Objec"
+        ]
+      }
+    },
+    {
+      "type": "external_script",
+      "url": "https://ekinair.my.id/_next/static/chunks/3b8pvy7tnp1cg.js",
+      "sensitive_data": {
+        "debug_info": [
+          "Debug",
+          "Exception",
+          "StackTrace",
+          "debug"
+        ],
+        "version_numbers": [
+          "16.2.9",
+          "19.3.0"
+        ]
+      }
+    },
+    {
+      "type": "external_script",
+      "url": "https://ekinair.my.id/_next/static/chunks/3_qa25k-pa7xu.js",
+      "sensitive_data": {
+        "debug_info": [
+          "debug",
+          "error in"
+        ],
+        "todo_fixme": [
+          "in the React Server Components bundler.');r=t[2]}return 4===t.length?[e.id,e.chu",
+          "in the React Server Components bundler.')}return n.async?[n.id,n.chunks,r,1]:[n."
+        ]
+      }
+    },
+    {
+      "type": "external_script",
+      "url": "https://ekinair.my.id/_next/static/chunks/0gp5ktsgx8lyg.js",
+      "sensitive_data": {
+        "debug_info": [
+          "Debug",
+          "debug"
+        ],
+        "todo_fixme": [
+          "in Next.js\"),\"__NEXT_ERROR_CODE\",{value:\"E224\",enumerable:!1,configurable:!0})})",
+          "in Next.js.`),new l.StaticGenBailoutError}else if(!1===r.hasAllowedDynamic&&r.ha",
+          "- ${e}:",
+          "in Next.js\"),\"__NEXT_ERROR_CODE\",{value:\"E296\",enumerable:!1,configurable:!0});l"
+        ]
+      }
+    }
+  ]
+}</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-06: Identify Application Entry Points</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Discovered Links</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "url": "https://ekinair.my.id/ekin/about",
+    "text": "Discover Profile",
+    "found_on": "https://ekinair.my.id/"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Forms</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>URL Parameters</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "url": "https://jkt48.com/member/detail?member=jacqueline-immanuela-120&type=TRAINEE",
+    "parameter": "member",
+    "sample_value": "jacqueline-immanuela-120",
+    "method": "GET"
+  },
+  {
+    "url": "https://jkt48.com/member/detail?member=jacqueline-immanuela-120&type=TRAINEE",
+    "parameter": "type",
+    "sample_value": "TRAINEE",
+    "method": "GET"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Crawled URLs</summary>
+                    <div class="details-content">
+                        <pre>[
+  "https://ekinair.my.id/",
+  "https://ekinair.my.id/ekin/about"
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>HTTP Methods</summary>
+                    <div class="details-content">
+                        <pre>{
+  "options_allow": "Not disclosed",
+  "tested": {
+    "GET": {
+      "status_code": 200,
+      "allowed": true
+    },
+    "POST": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "PUT": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "DELETE": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "PATCH": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "HEAD": {
+      "status_code": 200,
+      "allowed": true
+    },
+    "OPTIONS": {
+      "status_code": 204,
+      "allowed": true
+    },
+    "TRACE": {
+      "status_code": 405,
+      "allowed": false
+    }
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>AJAX/API Endpoints</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-07: Map Execution Paths Through Application</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Visited URLs</summary>
+                    <div class="details-content">
+                        <pre>[
+  "https://ekinair.my.id/",
+  "https://ekinair.my.id/ekin/about"
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Page Details</summary>
+                    <div class="details-content">
+                        <pre>{
+  "https://ekinair.my.id/": {
+    "status": 200,
+    "title": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase",
+    "forms": 0,
+    "depth": 0
+  },
+  "https://ekinair.my.id/ekin/about": {
+    "status": 200,
+    "title": "EKINAIR - Jacqueline Immanuela JKT48 Fanbase",
+    "forms": 0,
+    "depth": 1
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Link Connections</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "from": "https://ekinair.my.id/ekin/about",
+    "to": "https://ekinair.my.id/"
+  },
+  {
+    "from": "https://ekinair.my.id/",
+    "to": "https://ekinair.my.id/"
+  },
+  {
+    "from": "https://ekinair.my.id/",
+    "to": "https://ekinair.my.id/ekin/about"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Execution Path Diagram (Mermaid)</summary>
+                    <div class="details-content">
+                        <div class='mermaid'>
+graph TD
+    N0["Home (/)"]
+    N1["/ekin/about"]
+    N1 --> N0
+    N0 --> N1
+</div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-08: Fingerprint Web Application Framework</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Header-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Cookie-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>File/Path-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Version Information</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Technology Summary</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  },
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-09: Fingerprint Web Application</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Header-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Cookie-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>File/Path-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Version Information</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Technology Summary</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  },
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-10: Map Application Architecture</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Web Server</summary>
+                    <div class="details-content">
+                        <pre>{
+  "server": "Vercel",
+  "details": {
+    "x_powered_by": "N/A",
+    "x_aspnet_version": "N/A",
+    "status_code": 403
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>CDN</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "cdn": "Vercel",
+    "indicator": "server header",
+    "value": "Vercel"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>WAF</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "waf": "WAF Detected (blocked malicious request)",
+    "indicator": "Status 403 on SQLi test",
+    "value": "Status code: 403"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Load Balancer</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Network Architecture</summary>
+                    <div class="details-content">
+                        <pre>{
+  "ipv4_addresses": [
+    "216.198.79.1"
+  ],
+  "ipv6_addresses": [],
+  "multiple_ips": false,
+  "ssl_issuer": "Let's Encrypt",
+  "ssl_enabled": true
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Architecture Diagram (Mermaid)</summary>
+                    <div class="details-content">
+                        <div class='mermaid'>
+graph TD
+    CLIENT["🌐 Client/Browser"]
+    DNS["📡 DNS Resolution<br/>ekinair.my.id"]
+    CLIENT --> DNS
+    WAF["🛡️ WAF<br/>WAF Detected (blocked malicious request)"]
+    DNS --> WAF
+    CDN["⚡ CDN<br/>Vercel"]
+    WAF --> CDN
+    WEB["🖥️ Web Server<br/>Vercel"]
+    CDN --> WEB
+    APP["⚙️ Application"]
+    WEB --> APP
+    DB["🗄️ Database"]
+    APP --> DB
+    SSL["🔒 SSL/TLS<br/>CA: Let's Encrypt"]
+    CLIENT -.-> SSL
+    IPS["📍 IP Addresses<br/>216.198.79.1"]
+    WEB -.-> IPS
+</div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+    </div>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+        function exportPDF() {
+            document.querySelectorAll('details').forEach(detail => {
+                detail.open = true;
+            });
+            setTimeout(() => {
+                window.print();
+            }, 100);
+        }
+    </script>
+</body>
+</html>

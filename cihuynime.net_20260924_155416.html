@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSTG-INFO Report - https://www.cihuynime.net/</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #fff;
+            --primary: #2c3e50;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --border: #ddd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            margin: 0;
+            font-size: 1.2em;
+            color: var(--primary);
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .status.completed { background-color: var(--success); }
+        .status.partial { background-color: var(--warning); }
+        .status.error { background-color: var(--danger); }
+        
+        details {
+            margin-bottom: 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        summary {
+            padding: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .details-content {
+            padding: 15px;
+            border-top: 1px solid var(--border);
+            background-color: #fff;
+            overflow-x: auto;
+        }
+        pre {
+            background: #2b2b2b;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff; color: #000; padding: 0; }
+            .container { max-width: 100% !important; margin: 0; padding: 0; }
+            .card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; margin-bottom: 20px; }
+            pre { background: #f4f4f4; color: #000; border: 1px solid #ddd; white-space: pre-wrap; word-break: break-all; }
+            header { background: #fff; color: #000; border: 1px solid #ccc; }
+            .status.completed { color: #000; border: 1px solid var(--success); background: transparent; }
+            .status.error { color: #000; border: 1px solid var(--danger); background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WSTG-INFO Security Report</h1>
+            <p>Target: <strong>https://www.cihuynime.net/</strong></p>
+            <p>Generated: 2026-09-24 15:54:16</p>
+            <button class="no-print" onclick="exportPDF()" style="margin-top: 15px; padding: 10px 20px; background-color: var(--success); color: white; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">📄 Export as PDF</button>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-01: Conduct Search Engine Discovery Reconnaissance for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>WHOIS Information</summary>
+                    <div class="details-content">
+                        <pre>{
+  "domain_name": "CIHUYNIME.NET",
+  "registrar": "PT Biznet GIO Nusantara",
+  "creation_date": "2026-03-19 15:45:17, 2026-03-19 00:00:00",
+  "expiration_date": "2027-03-19 15:45:17, 2027-03-19 00:00:00",
+  "updated_date": "2026-03-19 15:47:51, 2026-03-19 22:47:56",
+  "name_servers": "DEMI.NS.CLOUDFLARE.COM, SCOTT.NS.CLOUDFLARE.COM",
+  "registrant_country": "DATA REDACTED",
+  "emails": "abuse@biznetgio.com",
+  "org": "DATA REDACTED",
+  "dnssec": "unsigned"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Search Engine Results</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "query": "site:cihuynime.net",
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "url": "https://www.cihuynime.net/",
+    "snippet": "Watch free anime online in HD quality. Cihuynime offers the best anime streaming experience with multiple servers, daily updates, and a complete library."
+  },
+  {
+    "query": "site:cihuynime.net",
+    "title": "CIHUYNIME - Next Generation Anime Streaming",
+    "url": "https://apps.cihuynime.net/",
+    "snippet": "Engineered for performance and pure enjoyment. Download CIHUYNIME for Android and Android TV. Stream anime in HD quality, AV1 support, and infinite library."
+  },
+  {
+    "query": "site:cihuynime.net",
+    "title": "Cihuynime - Watch Free Anime Online in HD",
+    "url": "https://www.cihuynime.net/producer/BLADE",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net",
+    "title": "Cihuynime | Watch Free Anime Online",
+    "url": "https://www.cihuynime.net/home",
+    "snippet": "A quiet, high-performance portal that respects the medium and the viewer. Watch Free Anime Online with HD quality."
+  },
+  {
+    "query": "site:cihuynime.net filetype:pdf",
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "url": "https://www.cihuynime.net/",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:pdf",
+    "title": "CIHUYNIME - Next Generation Anime Streaming",
+    "url": "https://apps.cihuynime.net/",
+    "snippet": "Engineered for performance and pure enjoyment. Download CIHUYNIME for Android and Android TV. Stream anime in HD quality, AV1 support, and infinite library."
+  },
+  {
+    "query": "site:cihuynime.net filetype:pdf",
+    "title": "Cihuynime - Watch Free Anime Online in HD",
+    "url": "https://www.cihuynime.net/producer/BLADE",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:pdf",
+    "title": "Cihuynime | Watch Free Anime Online",
+    "url": "https://www.cihuynime.net/home",
+    "snippet": "A quiet, high-performance portal that respects the medium and the viewer. Watch Free Anime Online with HD quality."
+  },
+  {
+    "query": "site:cihuynime.net filetype:doc",
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "url": "https://www.cihuynime.net/",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:doc",
+    "title": "CIHUYNIME - Next Generation Anime Streaming",
+    "url": "https://apps.cihuynime.net/",
+    "snippet": "Engineered for performance and pure enjoyment. Download CIHUYNIME for Android and Android TV. Stream anime in HD quality, AV1 support, and infinite library."
+  },
+  {
+    "query": "site:cihuynime.net filetype:doc",
+    "title": "Cihuynime - Watch Free Anime Online in HD",
+    "url": "https://www.cihuynime.net/producer/BLADE",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:doc",
+    "title": "Cihuynime | Watch Free Anime Online",
+    "url": "https://www.cihuynime.net/home",
+    "snippet": "A quiet, high-performance portal that respects the medium and the viewer. Watch Free Anime Online with HD quality."
+  },
+  {
+    "query": "site:cihuynime.net filetype:docx",
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "url": "https://www.cihuynime.net/",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:docx",
+    "title": "CIHUYNIME - Next Generation Anime Streaming",
+    "url": "https://apps.cihuynime.net/",
+    "snippet": "Engineered for performance and pure enjoyment. Download CIHUYNIME for Android and Android TV. Stream anime in HD quality, AV1 support, and infinite library."
+  },
+  {
+    "query": "site:cihuynime.net filetype:docx",
+    "title": "Cihuynime - Watch Free Anime Online in HD",
+    "url": "https://www.cihuynime.net/producer/BLADE",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:docx",
+    "title": "Cihuynime | Watch Free Anime Online",
+    "url": "https://www.cihuynime.net/home",
+    "snippet": "A quiet, high-performance portal that respects the medium and the viewer. Watch Free Anime Online with HD quality."
+  },
+  {
+    "query": "site:cihuynime.net filetype:xls",
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "url": "https://www.cihuynime.net/",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:xls",
+    "title": "CIHUYNIME - Next Generation Anime Streaming",
+    "url": "https://apps.cihuynime.net/",
+    "snippet": "Engineered for performance and pure enjoyment. Download CIHUYNIME for Android and Android TV. Stream anime in HD quality, AV1 support, and infinite library."
+  },
+  {
+    "query": "site:cihuynime.net filetype:xls",
+    "title": "Cihuynime - Watch Free Anime Online in HD",
+    "url": "https://www.cihuynime.net/producer/BLADE",
+    "snippet": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "query": "site:cihuynime.net filetype:xls",
+    "title": "Cihuynime | Watch Free Anime Online",
+    "url": "https://www.cihuynime.net/recently-added",
+    "snippet": "A quiet, high-performance portal that respects the medium and the viewer. Watch Free Anime Online with HD quality."
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-02: Fingerprint Web Server</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTTP Headers</summary>
+                    <div class="details-content">
+                        <pre>{
+  "status_code": 200,
+  "server": "Vercel",
+  "x_powered_by": "Not Disclosed",
+  "x_aspnet_version": "Not Disclosed",
+  "x_generator": "Not Disclosed",
+  "via": "Not Disclosed",
+  "x_cache": "Not Disclosed",
+  "all_headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Age": "492954",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "Content-Disposition": "inline",
+    "Content-Encoding": "br",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Thu, 24 Sep 2026 08:55:42 GMT",
+    "Etag": "W/\"9fc51cf130e8be48de316711548ef1ad\"",
+    "Server": "Vercel",
+    "Strict-Transport-Security": "max-age=63072000",
+    "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "X-Matched-Path": "/",
+    "X-Nextjs-Prerender": "1",
+    "X-Nextjs-Stale-Time": "300",
+    "X-Robots-Tag": "index, follow",
+    "X-Vercel-Cache": "HIT",
+    "X-Vercel-Id": "sin1::vbqf7-1790240142678-38a2384f0da3",
+    "Transfer-Encoding": "chunked"
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>HTTP Methods</summary>
+                    <div class="details-content">
+                        <pre>{
+  "options_allow": "Not Disclosed",
+  "head_status": 200,
+  "head_server": "Vercel"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Error Page Analysis</summary>
+                    <div class="details-content">
+                        <pre>{
+  "404_status": 404,
+  "error_page_signatures": [
+    "Cloudflare"
+  ]
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Banner Grab</summary>
+                    <div class="details-content">
+                        <pre>{
+  "raw_banner": "HTTP/1.0 308 Permanent Redirect\r\nContent-Type: text/plain\r\nLocation: https://cihuynime.net/\r\nRefresh: 0;url=https://cihuynime.net/\r\nserver: Vercel\r\n\r\nRedirecting...",
+  "banner_server": "Vercel"
+}</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-03: Review Webserver Metafiles for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>robots.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": true,
+  "disallow_paths": [
+    "/api/",
+    "/verify/",
+    "/_next/",
+    "/api/",
+    "/verify/",
+    "/api/",
+    "/verify/"
+  ],
+  "allow_paths": [
+    "/",
+    "/",
+    "/"
+  ],
+  "sitemaps": [
+    "https://cihuynime.net/sitemap.xml",
+    "https://www.cihuynime.net/sitemap.xml",
+    "https://cihuynime.net/main.xml",
+    "https://cihuynime.net/az-list.xml",
+    "https://cihuynime.net/recently-added.xml",
+    "https://cihuynime.net/recently-updated.xml",
+    "https://cihuynime.net/top-airing.xml",
+    "https://cihuynime.net/most-popular.xml",
+    "https://cihuynime.net/trending.xml",
+    "https://cihuynime.net/completed.xml",
+    "https://cihuynime.net/subbed-anime.xml",
+    "https://cihuynime.net/dubbed-anime.xml",
+    "https://cihuynime.net/movie.xml",
+    "https://cihuynime.net/forum.xml"
+  ],
+  "raw": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /verify/\nDisallow: /_next/\n\nUser-Agent: Googlebot\nAllow: /\nDisallow: /api/\nDisallow: /verify/\n\nUser-Agent: Bingbot\nAllow: /\nDisallow: /api/\nDisallow: /verify/\n\nHost: https://cihuynime.net\nSitemap: https://cihuynime.net/sitemap.xml\nSitemap: https://www.cihuynime.net/sitemap.xml\nSitemap: https://cihuynime.net/main.xml\nSitemap: https://cihuynime.net/az-list.xml\nSitemap: https://cihuynime.net/recently-added.xml\nSitemap: https://cihuynime.net/recently-updated.xml\nSitemap: https://cihuynime.net/top-airing.xml\nSitemap: https://cihuynime.net/most-popular.xml\nSitemap: https://cihuynime.net/trending.xml\nSitemap: https://cihuynime.net/completed.xml\nSitemap: https://cihuynime.net/subbed-anime.xml\nSitemap: https://cihuynime.net/dubbed-anime.xml\nSitemap: https://cihuynime.net/movie.xml\nSitemap: https://cihuynime.net/forum.xml\n"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Sitemap</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": true,
+  "urls": [
+    "https://www.cihuynime.net/main.xml",
+    "https://www.cihuynime.net/top-airing.xml",
+    "https://www.cihuynime.net/most-popular.xml",
+    "https://www.cihuynime.net/most-favorite.xml",
+    "https://www.cihuynime.net/completed.xml",
+    "https://www.cihuynime.net/recently-updated.xml",
+    "https://www.cihuynime.net/recently-added.xml",
+    "https://www.cihuynime.net/top-upcoming.xml",
+    "https://www.cihuynime.net/subbed-anime.xml",
+    "https://www.cihuynime.net/dubbed-anime.xml",
+    "https://www.cihuynime.net/trending.xml",
+    "https://www.cihuynime.net/forum.xml",
+    "https://www.cihuynime.net/new-episode.xml",
+    "https://www.cihuynime.net/az-list.xml"
+  ],
+  "url_count": 14,
+  "sitemap_path": "/sitemap.xml"
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>security.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": false,
+  "content": ""
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>humans.txt</summary>
+                    <div class="details-content">
+                        <pre>{
+  "exists": false,
+  "content": ""
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>.well-known Resources</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-04: Enumerate Applications on Webserver</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>DNS Records</summary>
+                    <div class="details-content">
+                        <pre>{
+  "A": [
+    "216.198.79.65",
+    "64.29.17.65"
+  ],
+  "AAAA": [],
+  "MX": [
+    "45 route3.mx.cloudflare.net.",
+    "82 route2.mx.cloudflare.net.",
+    "87 route1.mx.cloudflare.net."
+  ],
+  "NS": [
+    "demi.ns.cloudflare.com.",
+    "scott.ns.cloudflare.com."
+  ],
+  "TXT": [],
+  "CNAME": [],
+  "SOA": [
+    "demi.ns.cloudflare.com. dns.cloudflare.com. 2415602713 10000 2400 604800 1800"
+  ]
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Subdomain Enumeration</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "subdomain": "ani.cihuynime.net",
+    "ip_addresses": [
+      "104.21.49.38",
+      "172.67.141.71"
+    ]
+  },
+  {
+    "subdomain": "api.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "apps.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "cdn.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "fetch.cihuynime.net",
+    "ip_addresses": [
+      "104.21.49.38",
+      "172.67.141.71"
+    ]
+  },
+  {
+    "subdomain": "link.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "mail.cihuynime.net",
+    "ip_addresses": [
+      "104.21.49.38",
+      "172.67.141.71"
+    ]
+  },
+  {
+    "subdomain": "proxy.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "proxy-2.cihuynime.net",
+    "ip_addresses": [
+      "172.67.141.71",
+      "104.21.49.38"
+    ]
+  },
+  {
+    "subdomain": "www.cihuynime.net",
+    "ip_addresses": [
+      "216.198.79.1",
+      "64.29.17.1"
+    ]
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Open Ports</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "port": 80,
+    "service": "HTTP",
+    "status": "open"
+  },
+  {
+    "port": 443,
+    "service": "HTTPS",
+    "status": "open"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Virtual Hosts</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "host_header": "cihuynime.net",
+    "status_code": 403,
+    "content_length": 59,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "www.cihuynime.net",
+    "status_code": 403,
+    "content_length": 59,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "admin.cihuynime.net",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "api.cihuynime.net",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  },
+  {
+    "host_header": "dev.cihuynime.net",
+    "status_code": 404,
+    "content_length": 107,
+    "redirect": "N/A"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-05: Review Webpage Content for Information Leakage</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML Comments</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Meta Tags</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "name": "viewport",
+    "content": "width=device-width, initial-scale=1"
+  },
+  {
+    "name": "description",
+    "content": "Watch free anime online in HD quality. Cihuynime offers the best anime streaming experience with multiple servers, daily updates, and a complete library."
+  },
+  {
+    "name": "keywords",
+    "content": "Watch Free Anime Online, CIHUYNIME, HD Anime, Stream Anime, Nonton Anime Sub Indo, Anime Gratis"
+  },
+  {
+    "name": "robots",
+    "content": "index, follow"
+  },
+  {
+    "name": "description",
+    "content": "Cihuynime is your free anime streaming site. Watch anime online in HD quality with multiple servers, daily updates, English sub & dub. Fast loading."
+  },
+  {
+    "name": "author",
+    "content": "Cihuynime"
+  },
+  {
+    "name": "keywords",
+    "content": "Watch Anime Online,Free Anime Streaming,Anime HD,English Sub Anime,English Dub Anime,Watch Anime Free,Anime Streaming Site,Cihuynime,Best Anime Site,Latest Anime,Anime Episodes,Watch One Piece,Watch Jujutsu Kaisen,Watch Solo Leveling,Anime Subtitle English,Top Anime 2024,Anime Stream HD,New Anime Re"
+  },
+  {
+    "name": "creator",
+    "content": "Cihuynime"
+  },
+  {
+    "name": "publisher",
+    "content": "Cihuynime"
+  },
+  {
+    "name": "robots",
+    "content": "index, follow"
+  },
+  {
+    "name": "googlebot",
+    "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+  },
+  {
+    "name": "category",
+    "content": "entertainment"
+  },
+  {
+    "name": "classification",
+    "content": "Anime Streaming Platform"
+  },
+  {
+    "name": "revisit-after",
+    "content": "7 days"
+  },
+  {
+    "name": "language",
+    "content": "English"
+  },
+  {
+    "name": "rating",
+    "content": "General"
+  },
+  {
+    "name": "x-ua-compatible",
+    "content": "IE=edge"
+  },
+  {
+    "name": "format-detection",
+    "content": "telephone=no, address=no, email=no"
+  },
+  {
+    "name": "og:title",
+    "content": "Cihuynime - Watch Free Anime Online in HD"
+  },
+  {
+    "name": "og:description",
+    "content": "Cihuynime is your free anime streaming site. Watch anime in HD quality with multiple servers, English sub & dub, daily updates."
+  },
+  {
+    "name": "og:url",
+    "content": "https://cihuynime.net"
+  },
+  {
+    "name": "og:site_name",
+    "content": "Cihuynime"
+  },
+  {
+    "name": "og:locale",
+    "content": "en_US"
+  },
+  {
+    "name": "og:image",
+    "content": "https://cihuynime.net/splash.webp"
+  },
+  {
+    "name": "og:image:type",
+    "content": "image/webp"
+  },
+  {
+    "name": "og:image:width",
+    "content": "1200"
+  },
+  {
+    "name": "og:image:height",
+    "content": "630"
+  },
+  {
+    "name": "og:image:alt",
+    "content": "Cihuynime - Watch Free Anime Online in HD"
+  },
+  {
+    "name": "og:type",
+    "content": "website"
+  },
+  {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+  },
+  {
+    "name": "twitter:site",
+    "content": "@cihuynime"
+  },
+  {
+    "name": "twitter:creator",
+    "content": "@cihuynime"
+  },
+  {
+    "name": "twitter:title",
+    "content": "Cihuynime - Watch Free Anime Online in HD"
+  },
+  {
+    "name": "twitter:description",
+    "content": "Free anime streaming in HD. Multiple servers, daily updates, English sub & dub."
+  },
+  {
+    "name": "twitter:image",
+    "content": "https://cihuynime.net/splash.webp"
+  },
+  {
+    "name": "title",
+    "content": "CIHUYNIME - Watch Free Anime Online | HD Streaming"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Sensitive Patterns</summary>
+                    <div class="details-content">
+                        <pre>{}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>JavaScript Analysis</summary>
+                    <div class="details-content">
+                        <pre>{
+  "inline_script_count": 11,
+  "external_js_urls": [
+    "https://www.cihuynime.net/_next/static/chunks/4bd1b696-e356ca5ba0218e27.js",
+    "https://www.cihuynime.net/_next/static/chunks/8928-23506ee5428beb90.js",
+    "https://www.cihuynime.net/_next/static/chunks/main-app-a1aaf5ff5eafd0cd.js",
+    "https://www.cihuynime.net/_next/static/chunks/870fdd6f-57759e09ff81a71c.js",
+    "https://www.cihuynime.net/_next/static/chunks/8e1d74a4-278bdc92a37da924.js",
+    "https://www.cihuynime.net/_next/static/chunks/44530001-4e5a54d1411132bf.js",
+    "https://www.cihuynime.net/_next/static/chunks/69b09407-320aebbe7a4ebd95.js",
+    "https://www.cihuynime.net/_next/static/chunks/1610-794598f5b6e4a6ea.js",
+    "https://www.cihuynime.net/_next/static/chunks/5557-be17c3a7db8573af.js",
+    "https://www.cihuynime.net/_next/static/chunks/8500-f62a38ff68ab7f42.js"
+  ],
+  "js_sensitive_findings": [
+    {
+      "type": "external_script",
+      "url": "https://www.cihuynime.net/_next/static/chunks/4bd1b696-e356ca5ba0218e27.js",
+      "sensitive_data": {
+        "debug_info": [
+          "StackTrace",
+          "Debug",
+          "Exception"
+        ],
+        "version_numbers": [
+          "19.3.0"
+        ]
+      }
+    },
+    {
+      "type": "external_script",
+      "url": "https://www.cihuynime.net/_next/static/chunks/8928-23506ee5428beb90.js",
+      "sensitive_data": {
+        "debug_info": [
+          "error in",
+          "debug",
+          "Debug",
+          "Exception"
+        ],
+        "version_numbers": [
+          "19.3.0",
+          "8.5",
+          "16.5",
+          "16.2.9"
+        ],
+        "todo_fixme": [
+          "in Next.js.`,t),this.name=\"InvariantError\"}}},73623:(e,t,r)=>{\"use strict\";funct",
+          "in the React Server Components bundler.');r=t[2]}return 4===t.length?[e.id,e.chu",
+          "in the React Server Components bundler.')}return n.async?[n.id,n.chunks,r,1]:[n."
+        ]
+      }
+    },
+    {
+      "type": "external_script",
+      "url": "https://www.cihuynime.net/_next/static/chunks/8e1d74a4-278bdc92a37da924.js",
+      "sensitive_data": {
+        "version_numbers": [
+          "135.651",
+          "38.627"
+        ]
+      }
+    }
+  ]
+}</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-06: Identify Application Entry Points</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Discovered Links</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "url": "https://www.cihuynime.net/home",
+    "text": "CCIHUYNIME",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/home",
+    "text": "Home",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/movie",
+    "text": "Movies",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/schedule",
+    "text": "Schedule",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=One%20Piece",
+    "text": "One Piece",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Solo%20Leveling",
+    "text": "Solo Leveling",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen",
+    "text": "Jujutsu Kaisen",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko",
+    "text": "Oshi No Ko",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Mashle",
+    "text": "Mashle",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Frieren",
+    "text": "Frieren",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/home",
+    "text": "Watch Now",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/schedule",
+    "text": "Schedule",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/home",
+    "text": "Explore the Catalog",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/tos",
+    "text": "Terms",
+    "found_on": "https://www.cihuynime.net/"
+  },
+  {
+    "url": "https://www.cihuynime.net/dmca",
+    "text": "DMCA",
+    "found_on": "https://www.cihuynime.net/"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Forms</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>URL Parameters</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "url": "https://www.cihuynime.net/search?keyword=One%20Piece",
+    "parameter": "keyword",
+    "sample_value": "One Piece",
+    "method": "GET"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Solo%20Leveling",
+    "parameter": "keyword",
+    "sample_value": "Solo Leveling",
+    "method": "GET"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen",
+    "parameter": "keyword",
+    "sample_value": "Jujutsu Kaisen",
+    "method": "GET"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko",
+    "parameter": "keyword",
+    "sample_value": "Oshi No Ko",
+    "method": "GET"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Mashle",
+    "parameter": "keyword",
+    "sample_value": "Mashle",
+    "method": "GET"
+  },
+  {
+    "url": "https://www.cihuynime.net/search?keyword=Frieren",
+    "parameter": "keyword",
+    "sample_value": "Frieren",
+    "method": "GET"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Crawled URLs</summary>
+                    <div class="details-content">
+                        <pre>[
+  "https://www.cihuynime.net/dmca",
+  "https://www.cihuynime.net/",
+  "https://www.cihuynime.net/tos",
+  "https://www.cihuynime.net/home",
+  "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko",
+  "https://www.cihuynime.net/search?keyword=One%20Piece",
+  "https://www.cihuynime.net/search?keyword=Mashle",
+  "https://www.cihuynime.net/schedule",
+  "https://www.cihuynime.net/search?keyword=Solo%20Leveling",
+  "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen",
+  "https://www.cihuynime.net/search?keyword=Frieren",
+  "https://www.cihuynime.net/movie"
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>HTTP Methods</summary>
+                    <div class="details-content">
+                        <pre>{
+  "options_allow": "Not disclosed",
+  "tested": {
+    "GET": {
+      "status_code": 200,
+      "allowed": true
+    },
+    "POST": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "PUT": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "DELETE": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "PATCH": {
+      "status_code": 405,
+      "allowed": false
+    },
+    "HEAD": {
+      "status_code": 200,
+      "allowed": true
+    },
+    "OPTIONS": {
+      "status_code": 204,
+      "allowed": true
+    },
+    "TRACE": {
+      "status_code": 405,
+      "allowed": false
+    }
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>AJAX/API Endpoints</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-07: Map Execution Paths Through Application</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Visited URLs</summary>
+                    <div class="details-content">
+                        <pre>[
+  "https://www.cihuynime.net/dmca",
+  "https://www.cihuynime.net/",
+  "https://www.cihuynime.net/tos",
+  "https://www.cihuynime.net/home",
+  "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko",
+  "https://www.cihuynime.net/search?keyword=One%20Piece",
+  "https://www.cihuynime.net/search?keyword=Mashle",
+  "https://www.cihuynime.net/schedule",
+  "https://www.cihuynime.net/search?keyword=Solo%20Leveling",
+  "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen",
+  "https://www.cihuynime.net/search?keyword=Frieren",
+  "https://www.cihuynime.net/movie"
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Page Details</summary>
+                    <div class="details-content">
+                        <pre>{
+  "https://www.cihuynime.net/": {
+    "status": 200,
+    "title": "CIHUYNIME - Watch Free Anime Online | HD Streaming",
+    "forms": 0,
+    "depth": 0
+  },
+  "https://www.cihuynime.net/home": {
+    "status": 200,
+    "title": "Home | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/movie": {
+    "status": 200,
+    "title": "Movie | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/schedule": {
+    "status": 200,
+    "title": "Airing Schedule - Cihuynime | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=One%20Piece": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=Solo%20Leveling": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=Mashle": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/search?keyword=Frieren": {
+    "status": 200,
+    "title": "Search | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/tos": {
+    "status": 200,
+    "title": "Tos | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  },
+  "https://www.cihuynime.net/dmca": {
+    "status": 200,
+    "title": "Dmca | Cihuynime",
+    "forms": 0,
+    "depth": 1
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Link Connections</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=Oshi%20No%20Ko"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=Jujutsu%20Kaisen"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=Mashle"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=One%20Piece"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/home"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=Frieren"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/dmca"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/tos"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/schedule"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/search?keyword=Solo%20Leveling"
+  },
+  {
+    "from": "https://www.cihuynime.net/",
+    "to": "https://www.cihuynime.net/movie"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Execution Path Diagram (Mermaid)</summary>
+                    <div class="details-content">
+                        <div class='mermaid'>
+graph TD
+    N0["Home (/)"]
+    N1["/dmca"]
+    N2["/home"]
+    N3["/movie"]
+    N4["/schedule"]
+    N5["/search"]
+    N6["/search"]
+    N7["/search"]
+    N8["/search"]
+    N9["/search"]
+    N10["/search"]
+    N11["/tos"]
+    N0 --> N9
+    N0 --> N6
+    N0 --> N7
+    N0 --> N8
+    N0 --> N2
+    N0 --> N5
+    N0 --> N1
+    N0 --> N11
+    N0 --> N4
+    N0 --> N10
+    N0 --> N3
+</div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-08: Fingerprint Web Application Framework</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Header-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Cookie-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>File/Path-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Drupal",
+    "source": "Path exists: /user/login",
+    "confidence": "medium",
+    "status_code": 200
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Version Information</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Technology Summary</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  },
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  },
+  {
+    "technology": "Drupal",
+    "source": "Path exists: /user/login",
+    "confidence": "medium",
+    "status_code": 200
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-09: Fingerprint Web Application</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>HTML-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Header-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Cookie-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>File/Path-based Detection</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Version Information</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Technology Summary</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "technology": "Next.js",
+    "source": "HTML pattern",
+    "confidence": "medium"
+  },
+  {
+    "technology": "Vercel",
+    "source": "Server header",
+    "confidence": "high"
+  }
+]</pre>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">WSTG-INFO-10: Map Application Architecture</h2>
+                <span class="status completed">completed</span>
+            </div>
+            <div class="card-body">
+
+                <details>
+                    <summary>Web Server</summary>
+                    <div class="details-content">
+                        <pre>{
+  "server": "Vercel",
+  "details": {
+    "x_powered_by": "N/A",
+    "x_aspnet_version": "N/A",
+    "status_code": 403
+  }
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>CDN</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "cdn": "Vercel",
+    "indicator": "server header",
+    "value": "Vercel"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>WAF</summary>
+                    <div class="details-content">
+                        <pre>[
+  {
+    "waf": "WAF Detected (blocked malicious request)",
+    "indicator": "Status 403 on SQLi test",
+    "value": "Status code: 403"
+  }
+]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Load Balancer</summary>
+                    <div class="details-content">
+                        <pre>[]</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Network Architecture</summary>
+                    <div class="details-content">
+                        <pre>{
+  "ipv4_addresses": [
+    "216.198.79.65",
+    "64.29.17.65"
+  ],
+  "ipv6_addresses": [],
+  "multiple_ips": true,
+  "ssl_issuer": "Let's Encrypt",
+  "ssl_enabled": true
+}</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Architecture Diagram (Mermaid)</summary>
+                    <div class="details-content">
+                        <div class='mermaid'>
+graph TD
+    CLIENT["🌐 Client/Browser"]
+    DNS["📡 DNS Resolution<br/>cihuynime.net"]
+    CLIENT --> DNS
+    WAF["🛡️ WAF<br/>WAF Detected (blocked malicious request)"]
+    DNS --> WAF
+    CDN["⚡ CDN<br/>Vercel"]
+    WAF --> CDN
+    WEB["🖥️ Web Server<br/>Vercel"]
+    CDN --> WEB
+    APP["⚙️ Application"]
+    WEB --> APP
+    DB["🗄️ Database"]
+    APP --> DB
+    SSL["🔒 SSL/TLS<br/>CA: Let's Encrypt"]
+    CLIENT -.-> SSL
+    IPS["📍 IP Addresses<br/>216.198.79.65<br/>64.29.17.65"]
+    WEB -.-> IPS
+</div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+
+    </div>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+        function exportPDF() {
+            document.querySelectorAll('details').forEach(detail => {
+                detail.open = true;
+            });
+            setTimeout(() => {
+                window.print();
+            }, 100);
+        }
+    </script>
+</body>
+</html>
